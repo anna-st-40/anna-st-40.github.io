@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3rem;
+}
+
+header {
+    background: #fff;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-buttons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-buttons a:hover {
+    background-color: #777;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#about {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.skills-list li {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s;
+    width: 5.5rem; /* Set a consistent width for the list items */
+    text-align: center; /* Center the content inside the list items */
+}
+
+.skills-list li img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+}
+
+.skills-list li p {
+    font-size: 0.8rem; /* Adjust the size of the label text */
+}
+
+#projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
