@@ -14,6 +14,12 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    margin: 1rem;
+}
+
+/* Header section */
+
 header {
     background: #fff;
     color: #333;
@@ -112,9 +118,105 @@ section {
     background: #f4f4f4;
     padding: 1rem;
     border-radius: 8px;
-    width: 250px;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the project card */
+    display: flex;
+    flex-direction: row; /* Default to row layout */
 }
+
+.project-image {
+    flex: 1;
+    margin: .5rem;
+    max-width: 50%;
+}
+
+/* Tiling project image fade */
+
+#tiling-image-wrapper {
+    position: relative;
+    width: 600px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    overflow: hidden; /* Hide overflow to keep images within the wrapper */
+}
+
+#tiling-image-wrapper .project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+#tiling-image-wrapper .regular {
+    transition: 0.5s;
+}
+
+
+@media (max-width: 850px) {
+    .project {
+        flex-direction: column; /* Change to column layout on smaller screens */
+    }
+    .project-image {
+        max-width: 100%;
+    }
+}
+
+.project-description {
+    flex: 1;
+    text-align: left; /* Ensure the content inside is left aligned */
+    margin: 0.5rem; /* Add margin to the project description */
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.project-header h3 {
+    font-size: 1.5rem;
+}
+
+.project-links a {
+    color: #333;
+    font-size: 1.5rem; /* Increase the size of the icons */
+    margin: 0 0.5rem; /* Add some spacing between icons */
+    transition: color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: #777; /* Change the color on hover */
+    transform: scale(2); /* Slightly increase the size on hover */
+}
+
+.tech-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tech-pill i {
+    margin-right: .25rem;
+    margin-left: .25rem;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+    margin: .5rem 0;
+}
+
+
 
 footer {
     background: #333;
