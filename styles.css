@@ -133,22 +133,27 @@ header nav ul li a {
     flex: 1;
     margin: .5rem;
     max-width: 50%;
-    height: auto;
 }
 
-@media (max-width: 850px) {
-    .project {
-        flex-direction: column; /* Change to column layout on smaller screens */
-    }
-    .project-image {
-        max-width: 100%;
-    }
+.project-image img {
+    width: 100%;
+    height: auto;
 }
 
 .project-description {
     flex: 1;
     text-align: left; /* Ensure the content inside is left aligned */
     margin: 0.5rem; /* Add margin to the project description */
+}
+
+@media (max-width: 950px) {
+    .project {
+        flex-direction: column; /* Change to column layout on smaller screens */
+    }
+    .project-image {
+        min-width: 100%;
+        margin: 0;
+    }
 }
 
 .project-header {
