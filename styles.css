@@ -92,8 +92,8 @@ header nav ul li a {
     list-style: none;
     padding: 0.5rem 1rem;
     transition: transform 0.3s;
-    width: 5.5rem; /* Set a consistent width for the list items */
-    text-align: center; /* Center the content inside the list items */
+    width: 5.5rem;
+    text-align: center;
 }
 
 .skills-list li img {
@@ -106,7 +106,7 @@ header nav ul li a {
 }
 
 .skills-list li p {
-    font-size: 0.8rem; /* Adjust the size of the label text */
+    font-size: 0.8rem;
 }
 
 /* Project section */
@@ -124,15 +124,17 @@ header nav ul li a {
     border-radius: 8px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Center the project card */
+    margin: 0 auto;
     display: flex;
-    flex-direction: row; /* Default to row layout */
+    flex-direction: row;
 }
 
 .project-image {
     flex: 1;
     margin: .5rem;
     max-width: 50%;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-image img {
@@ -140,16 +142,45 @@ header nav ul li a {
     height: auto;
 }
 
+.project-image.hover-change::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.project-image.hover-change img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1.5s ease;
+}
+
+.project-image img.default-img {
+    z-index: 1;
+}
+
+.project-image img.hover-img {
+    z-index: 0;
+}
+
+.project-image:hover img.default-img {
+    opacity: 0; /* Fade out the default image */
+}
+
 .project-description {
     flex: 1;
-    text-align: left; /* Ensure the content inside is left aligned */
-    margin: 0.5rem; /* Add margin to the project description */
+    text-align: left;
+    /* Ensure the content inside is left aligned */
+    margin: 0.5rem;
+    /* Add margin to the project description */
 }
 
 @media (max-width: 950px) {
     .project {
-        flex-direction: column; /* Change to column layout on smaller screens */
+        flex-direction: column;
+        /* Change to column layout on smaller screens */
     }
+
     .project-image {
         min-width: 100%;
         margin: 0;
@@ -169,15 +200,19 @@ header nav ul li a {
 
 .project-links a {
     color: #333;
-    font-size: 1.5rem; /* Increase the size of the icons */
-    margin: 0 0.5rem; /* Add some spacing between icons */
+    font-size: 1.5rem;
+    /* Increase the size of the icons */
+    margin: 0 0.5rem;
+    /* Add some spacing between icons */
     transition: color 0.3s, transform 0.3s;
     text-decoration: none;
 }
 
 .project-links a:hover {
-    color: #777; /* Change the color on hover */
-    transform: scale(2); /* Slightly increase the size on hover */
+    color: #777;
+    /* Change the color on hover */
+    transform: scale(2);
+    /* Slightly increase the size on hover */
 }
 
 .tech-pill {
