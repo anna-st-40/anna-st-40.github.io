@@ -35,14 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
             textContent = ' Playwright';
             pill.style.backgroundColor = '#d4f7d4';
             pill.style.color = '#2EAD33';
-        } else if (pill.classList.contains('html')) {
+        } else if (pill.classList.contains('html/css')) {
             icon.className = 'fab fa-html5';
-            textContent = ' HTML';
-            pill.style.backgroundColor = '#f4d4c3';
-            pill.style.color = '#e34c26';
-        } else if (pill.classList.contains('css')) {
-            icon.className = 'fab fa-css3-alt';
-            textContent = ' CSS';
+            textContent = ' HTML/CSS';
             pill.style.backgroundColor = '#d1e0f7';
             pill.style.color = '#264de4';
         } else if (pill.classList.contains('scikit-learn')) {
@@ -50,6 +45,11 @@ document.addEventListener("DOMContentLoaded", function() {
             textContent = ' Scikit-learn';
             pill.style.backgroundColor = '#cce4f6';
             pill.style.color = '#3294C7';
+        } else if (pill.classList.contains('flask')) {
+            icon.className = 'fas fa-flask';
+            textContent = ' Flask';
+            pill.style.backgroundColor = '#ace8ac';
+            pill.style.color = '#219c21';
         } else {
             icon.className = 'fas fa-code';
         }
