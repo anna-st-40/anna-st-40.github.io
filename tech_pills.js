@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             pill.style.color = '#264de4';
         } else if (pill.classList.contains('scikit-learn')) {
             icon.className = 'fas fa-code';
-            textContent = ' Scikit-learn';
+            textContent = ' scikit-learn';
             pill.style.backgroundColor = '#cce4f6';
             pill.style.color = '#3294C7';
         } else if (pill.classList.contains('flask')) {
