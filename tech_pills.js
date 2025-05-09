@@ -25,21 +25,31 @@ document.addEventListener("DOMContentLoaded", function() {
             textContent = ' JavaScript';
             pill.style.backgroundColor = '#fff4c2';
             pill.style.color = '#e5c700';
+        } else if (pill.classList.contains('ts')) {
+            icon.className = 'fa-brands fa-js';
+            textContent = ' TypeScript';
+            pill.style.backgroundColor = '#d1e0f7';
+            pill.style.color = '#3178C6';
         } else if (pill.classList.contains('flutter')) {
             icon.className = 'fa-brands fa-flutter';
             textContent = ' Flutter';
             pill.style.backgroundColor = '#cce4f6';
             pill.style.color = '#02569B';
+        } else if (pill.classList.contains('react')) {
+            icon.className = 'fa-brands fa-react';
+            textContent = ' React';
+            pill.style.backgroundColor = '#c6eafd';
+            pill.style.color = '#217a91';
         } else if (pill.classList.contains('playwright')) {
             icon.className = 'fas fa-theater-masks';
             textContent = ' Playwright';
-            pill.style.backgroundColor = '#d4f7d4';
-            pill.style.color = '#2EAD33';
+            pill.style.backgroundColor = '#ffd6d6';
+            pill.style.color = '#d32f2f';
         } else if (pill.classList.contains('html/css')) {
             icon.className = 'fab fa-html5';
             textContent = ' HTML/CSS';
-            pill.style.backgroundColor = '#d1e0f7';
-            pill.style.color = '#264de4';
+            pill.style.backgroundColor = '#ffe5b4';
+            pill.style.color = '#ff8800';
         } else if (pill.classList.contains('scikit-learn')) {
             icon.className = 'fas fa-code';
             textContent = ' scikit-learn';
@@ -48,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (pill.classList.contains('flask')) {
             icon.className = 'fas fa-flask';
             textContent = ' Flask';
-            pill.style.backgroundColor = '#ace8ac';
-            pill.style.color = '#219c21';
+            pill.style.backgroundColor = '#d4f7d4';
+            pill.style.color = '#2EAD33';
         } else {
             icon.className = 'fas fa-code';
         }
