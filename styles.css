@@ -141,31 +141,6 @@ header nav ul li a {
     height: auto;
 }
 
-.project-image.hover-change::before {
-    content: "";
-    display: block;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-}
-
-.project-image.hover-change img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 1.5s ease;
-}
-
-.project-image img.default-img {
-    z-index: 1;
-}
-
-.project-image img.hover-img {
-    z-index: 0;
-}
-
-.project-image:hover img.default-img {
-    opacity: 0; /* Fade out the default image */
-}
-
 .project-description {
     flex: 1;
     text-align: left;

@@ -17,6 +17,10 @@
     rel="stylesheet">
 
   <script defer src="tech_pills.js"></script>
+
+  <!-- Image Comparison Slider -->
+  <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
 </head>
 
 <body>
@@ -220,7 +224,8 @@
             The extension was built using React with Typescript for the front-end, with integration of the Gmail API
             to enable seamless email management. We also used Playwright for end-to-end testing.
             <br><br>
-            <p><strong>Note:</strong> The source code for InboxWhiz is currently closed-source but is available upon request. Please contact me if you are interested in accessing or reviewing the code.</p>
+          <p><strong>Note:</strong> The source code for InboxWhiz is currently closed-source but is available upon
+            request. Please contact me if you are interested in accessing or reviewing the code.</p>
           </p>
 
         </div>
@@ -276,11 +281,13 @@
 
       <div class="project"> <!-- Image Tiling -->
 
-        <div class="project-image hover-change">
-          <img src="https://raw.githubusercontent.com/anna-st-40/image_tiling/refs/heads/main/demo_images/step_3.jpg"
-            alt="Tiled image" class="default-img">
-          <img src="https://raw.githubusercontent.com/anna-st-40/image_tiling/refs/heads/main/demo_images/step_0.jpg"
-            alt="Original image" class="hover-img">
+        <div class="project-image">
+          <img-comparison-slider hover="true">
+            <img slot="first"
+              src="https://raw.githubusercontent.com/anna-st-40/image_tiling/refs/heads/main/demo_images/step_0.jpg" />
+            <img slot="second"
+              src="https://raw.githubusercontent.com/anna-st-40/image_tiling/refs/heads/main/demo_images/step_3.jpg" />
+          </img-comparison-slider>
         </div>
 
         <div class="project-description">
@@ -329,7 +336,7 @@
       <div class="project"> <!-- YNAB Transaction Automation -->
 
         <div class="project-image">
-          <img src="https://i.pinimg.com/564x/6e/76/03/6e76030ab65356d5c3d2fa13b5c59534.jpg" alt="Project 1 Image">
+          <img src="https://i.pinimg.com/564x/6e/76/03/6e76030ab65356d5c3d2fa13b5c59534.jpg" alt="YNAB Project Image">
         </div>
 
         <div class="project-description">
